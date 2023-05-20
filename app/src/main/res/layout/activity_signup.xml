@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icon_ig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="160dp"
+        android:text="Instagram"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernamee"
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        app:endIconMode="clear_text"
+        android:hint="Username"
+        app:hintEnabled="false"
+        android:textSize="20sp"
+        android:textColorHint="@color/tx"
+        app:startIconDrawable="@drawable/ic_person"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        />
+
+    <EditText
+        android:id="@+id/passwords"
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:hintEnabled="false"
+        android:textSize="20sp"
+        app:endIconMode="password_toggle"
+        android:textColorHint="@color/tx"
+        app:startIconDrawable="@drawable/ic_person"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernamee"
+        />
+
+    <EditText
+        android:id="@+id/repasswords"
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        app:hintEnabled="false"
+        android:textSize="20sp"
+        app:endIconMode="password_toggle"
+        android:textColorHint="@color/tx"
+        app:startIconDrawable="@drawable/ic_person"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwords"
+        />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="355dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Sign up"
+        android:textSize="20sp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repasswords"/>
+
+
+    <TextView
+        android:id="@+id/btnsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignup"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
